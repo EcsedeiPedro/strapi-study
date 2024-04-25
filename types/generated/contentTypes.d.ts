@@ -411,7 +411,6 @@ export interface ApiRestaurantRestaurant extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String & Attribute.Required & Attribute.Unique;
-    description: Attribute.Blocks;
     categories: Attribute.Relation<
       'api::restaurant.restaurant',
       'manyToMany',
@@ -419,6 +418,7 @@ export interface ApiRestaurantRestaurant extends Schema.CollectionType {
     >;
     image: Attribute.Media & Attribute.Required;
     address: Attribute.String & Attribute.Required & Attribute.Unique;
+    description: Attribute.Text & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

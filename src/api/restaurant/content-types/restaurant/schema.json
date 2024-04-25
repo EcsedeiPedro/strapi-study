@@ -17,9 +17,6 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "type": "blocks"
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
@@ -27,15 +24,20 @@
       "mappedBy": "restaurants"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "address": {
       "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
       "required": true,
       "unique": true
     }
