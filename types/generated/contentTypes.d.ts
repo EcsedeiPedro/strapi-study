@@ -418,6 +418,7 @@ export interface ApiRestaurantRestaurant extends Schema.CollectionType {
     >;
     address: Attribute.String & Attribute.Required & Attribute.Unique;
     description: Attribute.Text & Attribute.Required & Attribute.Unique;
+    picture: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
