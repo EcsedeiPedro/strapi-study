@@ -23,14 +23,6 @@
       "target": "api::category.category",
       "mappedBy": "restaurants"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "address": {
       "type": "string",
       "required": true,
