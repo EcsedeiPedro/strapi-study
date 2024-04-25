@@ -417,6 +417,8 @@ export interface ApiRestaurantRestaurant extends Schema.CollectionType {
       'manyToMany',
       'api::category.category'
     >;
+    image: Attribute.Media & Attribute.Required;
+    address: Attribute.String & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -25,6 +25,19 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "restaurants"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
